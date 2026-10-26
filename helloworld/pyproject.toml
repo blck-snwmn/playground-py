@@ -19,6 +19,9 @@ allow-direct-references = true
 [tool.hatch.build.targets.wheel]
 packages = ["src/helloworld"]
 
+[tool.uv]
+exclude-newer = "7 days"
+
 [tool.ruff.lint]
 select = [
     # pycodestyle
